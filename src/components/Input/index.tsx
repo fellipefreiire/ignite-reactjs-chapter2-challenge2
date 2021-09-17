@@ -7,7 +7,7 @@ import { Container } from "./styles";
 import { InputPropsUpdated } from "../../types";
 
 const Input = ({ name, icon: Icon, ...rest }: InputPropsUpdated) => {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);
